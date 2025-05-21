@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('warna');
             $table->string('foto');
             $table->integer('harga_sewa');
-            $table->integer('lama_sewa');
+            // $table->integer('lama_sewa');
             $table->string('nomor_polisi')->unique();
             $table->enum('status', ['tersedia', 'disewa', 'servis'])->default('tersedia');
             $table->enum('tranmisi', ['kopling', 'matic']);

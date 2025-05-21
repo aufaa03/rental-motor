@@ -18,8 +18,9 @@ return new class extends Migration
             $table->date('tanggal_sewa');
             $table->date('tanggal_kembali');
             $table->integer('total_bayar');
-            $table->enum('status', ['berjalan', 'selesai'])->default('berjalan');
+            $table->enum('status', ['berjalan', 'belum kembali', 'selesai'])->default('berjalan'); //bs tambahkan status menunggu
             $table->timestamps();
+
         });
     }
 
